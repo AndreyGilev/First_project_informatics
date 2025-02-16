@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
 
-//Подтягиваем класс искусственных объектов и его наследников
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 #include "Artificials.h"
 #include "Ship.h"
 #include "Sat.h"
 #include "Sta.h"
 
-//Подтягиваем класс естественных объектов и его наследников
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 #include "Naturals.h"
 
 using namespace std;
@@ -38,6 +38,15 @@ int main() {
     int m = tiangong.get_modules();
     float age = tiangong.get_age();
     cout << m << " " << age << endl;
+
+    Star Solar(200000000, 697000, "Solar", 1000000, 1);
+    cout << Solar.getTimetodeath()<<endl;
+
+    Planet Earth(60000000000, 6400, "Earth", 800000, true, 300);
+    cout<< Earth.isThereLive()<<endl;
+
+    NatSatellite Moon(736000000, 1738, "Moon", 0);
+    cout<< Moon.getMass()<<endl;
 
     cout << "Job is done" << endl;
     return 0;
