@@ -6,10 +6,10 @@ using namespace std;
 
 class Sta: public Artificials {
 public:
-    Sta(): Artificials("New station", 10, 1,0,0), modules(2) {
+    Sta(): Artificials("New station", 10, 1,0,0,0,0,0), modules(2) {
 
     }
-    Sta(string name_, unsigned int crew_, float vx, float vy, float vz, unsigned int modules_): Artificials(name_, crew_, vx, vy, vz), modules(modules_) {
+    Sta(string name_, unsigned int crew_, float vx, float vy, float vz, float rx, float ry, float rz, unsigned int modules_): Artificials(name_, crew_, vx, vy, vz, rx, ry, rz), modules(modules_) {
 
     }
 

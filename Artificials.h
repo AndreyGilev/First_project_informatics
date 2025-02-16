@@ -9,13 +9,18 @@ using namespace std;
 
 class Artificials {
 public:
-    Artificials(): age(0.0), name("New spacecraft"), crew(0), v{0,0,0} {
+    Artificials(): age(0.0), name("New spacecraft"), crew(0), v{0,0,0}, r{0,0,0} {
     }
-    Artificials(string name_, int crew_, float vx, float vy, float vz): age(0.0), name(name_), crew(crew_) {
+    Artificials(string name_, int crew_, float vx, float vy, float vz, float rx, float ry, float rz): age(0.0), name(name_), crew(crew_) {
         for(int i = 0; i < 3; i++) {
             v[0] = vx;
             v[1] = vy;
             v[2] = vz;
+
+            r[0] = rx;
+            r[1] = ry;
+            r[2] = rz;
+
         }
     }
 
